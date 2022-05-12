@@ -85,7 +85,7 @@ html {
 
 .hoverEffect:focus {
     background-color: var(--Orange);
-    color: var(--White);
+    color: white;
 }
 
 #btn {
