@@ -1,0 +1,284 @@
+:root {
+    /* primary color */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral colors */
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --light_Blue: hsl(214, 25%, 30%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --VeryDark_Blue: hsl(216, 12%, 8%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* rating page styling */
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--VeryDark_Blue);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    width: 30%;
+    background-color: var(--Dark_Blue);
+    border-radius: 3rem;
+    padding: 3rem;
+}
+
+#star {
+    display: block;
+
+}
+
+#star>img {
+    width: 100%;
+}
+
+#heading {
+    font-weight: bold;
+    font-size: 2.4rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.para {
+    font-size: 1.5rem;
+    font-weight: 100;
+    line-height: 2rem;
+    padding-bottom: 2rem;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.hoverEffect {
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: var(--Light_Grey);
+    text-align: center;
+}
+
+.hoverEffect:hover {
+    background-color: var(--Medium_Grey);
+    color: var(--White);
+}
+
+.hoverEffect:active {
+    background-color: var(--Orange);
+}
+
+#btn {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#btn:visited {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+/* thank you page styling */
+
+
+.thank-main_container {
+    width: 30%;
+    background-color: var(--Dark_Blue);
+    border-radius: 3rem;
+    padding: 1rem;
+
+    text-align: center;
+    /* display: none; */
+}
+
+.image {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.message {
+    margin: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--light_Blue);
+    border-radius: 3rem;
+    color: var(--Orange);
+}
+
+.greeting {
+    font-weight: 700;
+    text-transform: capitalize;
+    word-spacing: 0.2rem;
+    /* padding: 1rem; */
+    margin: 1rem;
+    font-family: 'Overpass', sans-serif;
+    font-size: 2.8rem;
+}
+
+.para {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+    color: var(--Light_Grey);
+}
+
+/* Global classes  */
+.fontFamily {
+    font-family: 'Overpass', sans-serif;
+}
+
+.circleDiv {
+    width: 13%;
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--light_Blue);
+    /* opacity: 0.7; */
+    border: 1px solid var(--Dark_Blue);
+
+}
+
+.circleDiv span {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* responsive styles */
+
+@media(max-width:1200px) {
+
+    .main_container,
+    .thank-main_container {
+        width: 34%;
+    }
+}
+
+/* @media(max-width:1000px) {
+    .main_container,.thank-main_container{
+        width: 40%;
+    }
+} */
+
+@media(max-width:992px) {
+
+    .main_container {
+        width: 40%;
+        padding: 2.4rem;
+    }
+    .thank-main_container {
+        width: 40%;
+        padding: 1.6rem;
+    }
+}
+
+@media(max-width:768px) {
+
+    .main_container,
+    .thank-main_container {
+        width: 55%;
+    }
+
+    .circleDiv {
+        width: 12%;
+        line-height: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    .para {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:576px) {
+
+    .main_container {
+        width: 75%;
+        padding: 3rem;
+    }
+    .thank-main_container {
+        width: 75%;
+        padding: 2rem;
+    }
+
+    #heading {
+        font-size: 2.0rem;
+        margin: 0;
+    }
+
+    .para {
+        font-size: 1.4rem;
+        padding-bottom: 2rem;
+    }
+
+    .circleDiv {
+        width: 13%;
+        line-height: 1.4rem;
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* @media(max-width:500px) {
+    .main_container,.thank-main_container {
+        width: 75%;
+    }
+} */
+
+@media(max-width: 375px) {
+
+    .main_container,
+    .thank-main_container {
+        width: 90%;
+    }
+
+    .circleDiv {
+        line-height: 1.2rem;
+    }
+
+    .para {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--VeryDark_Blue);
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
